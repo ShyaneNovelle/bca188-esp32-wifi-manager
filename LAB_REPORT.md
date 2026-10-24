@@ -1,5 +1,3 @@
-<img width="720" height="1600" alt="bafef874-4319-4852-b588-27e85dbe53de" src="https://github.com/user-attachments/assets/5d9ef8f5-6739-4695-a8ce-a7b13decd5cc" /># Laboratory Report: ESP32 Wi-Fi Manager
-
 **Laboratory Activity 9 **
 
 | | |
