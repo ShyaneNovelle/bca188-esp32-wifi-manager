@@ -35,11 +35,15 @@ The sketch also restarts the board if setup is not completed within 3 minutes (`
 
 <img width="635" height="368" alt="Screenshot 2026-10-24 121111" src="https://github.com/user-attachments/assets/5dc3f067-c6bb-4a60-b14a-181cfac87a98" />
 
+
 <img width="640" height="331" alt="Screenshot 2026-10-24 121708" src="https://github.com/user-attachments/assets/059b0a8a-d3b0-48db-bea1-bac1e98f6fcb" />
+
 
 <img width="639" height="119" alt="Screenshot 2026-10-24 133211" src="https://github.com/user-attachments/assets/ed7f9aee-a1a9-4519-827d-b497a2c37513" />
 
+
 <img width="720" height="1600" alt="7299ca76-a893-4000-95f9-d794f4d93491" src="https://github.com/user-attachments/assets/5d7e35b1-6fc4-47e8-acdc-cb9c917e7f77" />
+
 
 ## Why did the board connect to a different network without a code change?
 
