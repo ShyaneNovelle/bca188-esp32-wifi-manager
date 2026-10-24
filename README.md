@@ -33,9 +33,6 @@ The sketch also restarts the board if setup is not completed within 3 minutes (`
 
 **2. Serial Monitor showing a connected state with an IP address:**
 
-<img width="635" height="368" alt="Screenshot 2026-10-24 121111" src="https://github.com/user-attachments/assets/5dc3f067-c6bb-4a60-b14a-181cfac87a98" />
-
-
 <img width="640" height="331" alt="Screenshot 2026-10-24 121708" src="https://github.com/user-attachments/assets/059b0a8a-d3b0-48db-bea1-bac1e98f6fcb" />
 
 
