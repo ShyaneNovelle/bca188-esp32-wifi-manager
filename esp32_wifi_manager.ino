@@ -1,7 +1,7 @@
 #include <WiFiManager.h>   // WiFiManager by tzapu (install from Library Manager)
 
 // ---- CHANGE THIS to your assigned number ----
-const char* AP_NAME = "BCA188-ESP32-2-24-2083";
+const char* AP_NAME = "BCA188-ESP32-2024-2083";
 
 #define BOOT_PIN 0           // BOOT button on most ESP32 dev boards (GPIO0)
 WiFiManager wm;
