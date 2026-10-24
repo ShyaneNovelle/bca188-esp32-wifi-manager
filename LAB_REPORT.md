@@ -1,10 +1,10 @@
-# Laboratory Report: ESP32 Wi-Fi Manager
+<img width="720" height="1600" alt="bafef874-4319-4852-b588-27e85dbe53de" src="https://github.com/user-attachments/assets/5d9ef8f5-6739-4695-a8ce-a7b13decd5cc" /># Laboratory Report: ESP32 Wi-Fi Manager
 
-**Laboratory Activity 9 (Individual)**
+**Laboratory Activity 9 **
 
 | | |
 |---|---|
-| **Name** | [Your Full Name] |
+| **Name** | Shyane Novelle R. Canayan |
 | **Assigned number** | 2024-2083 |
 | **Course** | BCA188 |
 | **Date performed** | 24 October 2026 |
@@ -49,7 +49,8 @@ Because the credentials are saved on the board and entered at runtime, the same 
 
 ### Key parts of the sketch
 
-The complete sketch is in [`esp32_wifimanager/esp32_wifimanager.ino`](esp32_wifimanager/esp32_wifimanager.ino).
+The complete sketch is in 
+(esp32_wifi_manager.ino
 
 | Code | Purpose |
 |------|---------|
@@ -66,15 +67,18 @@ After uploading the code, the ESP32 started its setup network. My phone showed `
 
 **Figure 1.** The ESP32 setup network `BCA188-ESP32-2024-2083` in my phone's Wi-Fi list.
 
-<img src="images/01-esp32-network-in-phone-wifi-list.jpg" alt="Phone Wi-Fi list showing BCA188-ESP32-2024-2083" width="300">
+<img width="720" height="1600" alt="bafef874-4319-4852-b588-27e85dbe53de" src="https://github.com/user-attachments/assets/797830cd-acd5-41d0-aa32-d1f9909179ea" />
+
 
 **Figure 2.** The WiFiManager setup page at `192.168.4.1`, opened on my phone ("No AP set" means no Wi-Fi was saved yet).
 
-<img src="images/02-setup-page-on-phone.jpg" alt="WiFiManager setup page on phone" width="300">
+<img width="720" height="1600" alt="4376a0af-b038-44b0-b785-d33b6862f173" src="https://github.com/user-attachments/assets/64ce1610-df5b-4735-b63b-082c1b05d283" />
+
 
 **Figure 3.** Serial Monitor after the first start, showing `16 networks found`.
 
-![Serial Monitor: 16 networks found](images/03-serial-networks-found.png)
+<img width="640" height="392" alt="Screenshot 2026-10-24 120805" src="https://github.com/user-attachments/assets/75ef466e-3547-45de-8b4d-51e80ab80b82" />
+
 
 ## 6. Practice tasks
 
@@ -103,19 +107,19 @@ The timeout worked as intended: a wrong password did not leave the board stuck, 
 
 **Figure 4.** Phone: "Saving Credentials" page after submitting the wrong password.
 
-<img src="images/04-task1-phone-saving-credentials.jpg" alt="Phone showing Saving Credentials page" width="300">
+<img width="720" height="1600" alt="bafef874-4319-4852-b588-27e85dbe53de" src="https://github.com/user-attachments/assets/b4cb883a-4916-4046-a1bf-25b9f6818d9b" />
+
 
 **Figure 5.** Serial Monitor: connecting to `W.I.F.I [E.E]` with the wrong password.
 
-![Serial Monitor: connecting to new AP](images/05-task1-serial-connecting.png)
+<img width="635" height="368" alt="Screenshot 2026-10-24 121111" src="https://github.com/user-attachments/assets/6569dd96-a808-4a05-bc28-96429e1a92cf" />
+
 
 **Figure 6.** Serial Monitor: `[ERROR] Connect to new AP Failed`.
+Serial Monitor: restart after the failed setup, setup portal started again, then connected with the correct password (IP `192.168.0.103`).
 
-![Serial Monitor: connect to new AP failed](images/06-task1-serial-connect-failed.png)
+<img width="640" height="392" alt="Screenshot 2026-10-24 120805" src="https://github.com/user-attachments/assets/6777e8c0-b857-4314-a590-662e065eb130" />
 
-**Figure 7.** Serial Monitor: restart after the failed setup, setup portal started again, then connected with the correct password (IP `192.168.0.103`).
-
-![Serial Monitor: restart, new setup, connected with IP address](images/07-serial-restart-then-connected-ip.png)
 
 ### Task 2: Reset settings
 
@@ -123,9 +127,10 @@ The timeout worked as intended: a wrong password did not leave the board stuck, 
 
 **What I observed:** The board erased the saved Wi-Fi settings and restarted. After the restart, the Serial Monitor printed `AutoConnect`, `No wifi saved, skipping`, and `AutoConnect: FAILED for 1 ms`. The board then started the setup network `BCA188-ESP32-2024-2083` with the portal at `192.168.4.1` instead of reconnecting to my router (Figure 8).
 
-**Figure 8.** Serial Monitor after the BOOT reset: no Wi-Fi saved, setup network started.
+**Figure 7.** Serial Monitor after the BOOT reset: no Wi-Fi saved, setup network started.
 
-![Serial Monitor: No wifi saved, StartAP](images/08-task2-serial-no-wifi-saved.png)
+<img width="640" height="353" alt="Screenshot 2026-10-24 122627" src="https://github.com/user-attachments/assets/e04376d3-dfec-4d06-be24-a58d2f41349c" />
+
 
 ### Task 3: Change the name
 
@@ -135,17 +140,20 @@ The timeout worked as intended: a wrong password did not leave the board stuck, 
 
 The new name appeared immediately because the saved Wi-Fi had already been erased in Task 2 (`No wifi saved, skipping`). Uploading new code does not erase saved Wi-Fi credentials, so if the board had still been connected to a router, it would have reconnected to it and would not have shown the new name until it was reset with the BOOT button.
 
-**Figure 9.** The sketch with `AP_NAME` changed to `IamSagi`.
+**Figure 8.** The sketch with `AP_NAME` changed to `IamSagi`.
 
-![Code with AP_NAME set to IamSagi](images/09-task3-code-new-ap-name.png)
+<img width="720" height="1600" alt="7299ca76-a893-4000-95f9-d794f4d93491" src="https://github.com/user-attachments/assets/d0d9d3fc-1433-4ff0-bcfa-87de7ad48dac" />
 
-**Figure 10.** Serial Monitor: `StartAP with SSID: IamSagi`.
 
-![Serial Monitor: StartAP with SSID IamSagi](images/10-task3-serial-new-ap-name.png)
+**Figure 9.** Serial Monitor: `StartAP with SSID: IamSagi`.
 
-**Figure 11.** Phone Wi-Fi list showing the new name `IamSagi`.
+<img width="635" height="327" alt="Screenshot 2026-10-24 123707" src="https://github.com/user-attachments/assets/18af2e3a-5e7c-40b2-831a-668cdee415b5" />
 
-<img src="images/11-task3-phone-wifi-list-new-name.jpg" alt="Phone Wi-Fi list showing IamSagi" width="300">
+
+**Figure 10.** Phone Wi-Fi list showing the new name `IamSagi`.
+
+<img width="720" height="1600" alt="382d5fe6-0177-4333-b107-ef75add95439" src="https://github.com/user-attachments/assets/d15b3bca-d56a-48fd-a3c4-468ac635920f" />
+
 
 ### Task 4: Different network
 
@@ -153,17 +161,20 @@ The new name appeared immediately because the saved Wi-Fi had already been erase
 
 **What I observed:** The board connected to the hotspot without any code change. The Serial Monitor printed `Connect to new AP [SUCCESS]`, `Connected!`, `Network: Hammurabi Code`, and `IP address: 10.22.84.193` (Figure 14). The phone's hotspot page lists the ESP32 (`esp32-A359E0`) as 1 connected device (Figure 12).
 
-**Figure 12.** Phone Mobile Hotspot settings: network `Hammurabi Code`, 2.4 GHz band, and the ESP32 shown as a connected device. (The hotspot password has been hidden.)
+**Figure 11.** Phone Mobile Hotspot settings: network `Hammurabi Code`, 2.4 GHz band, and the ESP32 shown as a connected device. (The hotspot password has been hidden.)
 
-<img src="images/12-task4-phone-hotspot-settings.jpg" alt="Phone Mobile Hotspot settings with ESP32 connected" width="300">
+<img width="720" height="1600" alt="7299ca76-a893-4000-95f9-d794f4d93491" src="https://github.com/user-attachments/assets/6dc51e47-f151-4e9f-a7e2-1c00544528bc" />
 
-**Figure 13.** Laptop browser at `192.168.4.1/wifisave` after entering the hotspot details.
 
-![Laptop showing Saving Credentials page](images/13-task4-laptop-saving-credentials.png)
+**Figure 12.** Laptop browser at `192.168.4.1/wifisave` after entering the hotspot details.
 
-**Figure 14.** Serial Monitor: connected to `Hammurabi Code` with IP `10.22.84.193`.
+<img width="302" height="158" alt="Screenshot 2026-10-24 133028" src="https://github.com/user-attachments/assets/e9f6b0e1-e174-44ee-92ab-08995618e707" />
 
-![Serial Monitor: connected to Hammurabi Code, IP 10.22.84.193](images/14-task4-serial-connected-hotspot.png)
+
+**Figure 13.** Serial Monitor: connected to `Hammurabi Code` with IP `10.22.84.193`.
+
+<img width="639" height="119" alt="Screenshot 2026-10-24 133211" src="https://github.com/user-attachments/assets/eabb341c-19af-4fcb-9acc-3c9e238e019e" />
+
 
 ## 7. Comparison of the two networks
 
@@ -195,22 +206,3 @@ The new name appeared immediately because the saved Wi-Fi had already been erase
 ## 10. Conclusion
 
 I set up WiFiManager on an ESP32 and used it to connect the board to two different networks, my home router and my phone hotspot, without changing the code. I observed what happens with a wrong password (the board restarts and offers the setup network again), how the BOOT button resets the saved Wi-Fi, and that a new setup network name appears after a reset. The activity showed how storing credentials on the board and entering them through a setup portal makes an ESP32 project much easier to move between networks.
-
-## Appendix: Figure index
-
-| Figure | File |
-|--------|------|
-| 1 | `images/01-esp32-network-in-phone-wifi-list.jpg` |
-| 2 | `images/02-setup-page-on-phone.jpg` |
-| 3 | `images/03-serial-networks-found.png` |
-| 4 | `images/04-task1-phone-saving-credentials.jpg` |
-| 5 | `images/05-task1-serial-connecting.png` |
-| 6 | `images/06-task1-serial-connect-failed.png` |
-| 7 | `images/07-serial-restart-then-connected-ip.png` |
-| 8 | `images/08-task2-serial-no-wifi-saved.png` |
-| 9 | `images/09-task3-code-new-ap-name.png` |
-| 10 | `images/10-task3-serial-new-ap-name.png` |
-| 11 | `images/11-task3-phone-wifi-list-new-name.jpg` |
-| 12 | `images/12-task4-phone-hotspot-settings.jpg` |
-| 13 | `images/13-task4-laptop-saving-credentials.png` |
-| 14 | `images/14-task4-serial-connected-hotspot.png` |
