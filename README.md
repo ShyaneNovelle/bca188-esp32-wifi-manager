@@ -1,8 +1,8 @@
-# Laboratory Activity 9: ESP32 Wi-Fi Manager (Individual)
+# Laboratory Activity 9: ESP32 Wi-Fi Manager
 
 | | |
 |---|---|
-| **Name** | [Your Full Name] |
+| **Name** | Shyane Novelle R. Canayan |
 | **Assigned number** | 2024-2083 |
 | **Setup network name** | `BCA188-ESP32-2024-2083` |
 | **Course** | BCA188 |
@@ -28,13 +28,18 @@ The sketch also restarts the board if setup is not completed within 3 minutes (`
 
 **1. Setup page on my phone** (`192.168.4.1`, served by the ESP32 while it was in setup mode):
 
-<img src="images/02-setup-page-on-phone.jpg" alt="WiFiManager setup page on phone" width="300">
+<img width="720" height="1600" alt="4376a0af-b038-44b0-b785-d33b6862f173" src="https://github.com/user-attachments/assets/c9a4f246-875d-4f7f-bf8a-e8bb54d3d158" />
+
 
 **2. Serial Monitor showing a connected state with an IP address:**
 
-![Serial Monitor showing Connected and IP address 192.168.0.103](images/07-serial-restart-then-connected-ip.png)
+<img width="635" height="368" alt="Screenshot 2026-10-24 121111" src="https://github.com/user-attachments/assets/5dc3f067-c6bb-4a60-b14a-181cfac87a98" />
 
-The other screenshots (all four tasks, step by step) are in the [full laboratory report](LAB_REPORT.md).
+<img width="640" height="331" alt="Screenshot 2026-10-24 121708" src="https://github.com/user-attachments/assets/059b0a8a-d3b0-48db-bea1-bac1e98f6fcb" />
+
+<img width="639" height="119" alt="Screenshot 2026-10-24 133211" src="https://github.com/user-attachments/assets/ed7f9aee-a1a9-4519-827d-b497a2c37513" />
+
+<img width="720" height="1600" alt="7299ca76-a893-4000-95f9-d794f4d93491" src="https://github.com/user-attachments/assets/5d7e35b1-6fc4-47e8-acdc-cb9c917e7f77" />
 
 ## Why did the board connect to a different network without a code change?
 
@@ -46,5 +51,5 @@ The board connected to a different network without a code change because WiFiMan
 |------|-------------|
 | `README.md` | This file: summary, results table, screenshots, and explanation |
 | `LAB_REPORT.md` | Full laboratory report with procedure, all screenshots, and discussion |
-| `esp32_wifimanager/esp32_wifimanager.ino` | The Arduino sketch used in this activity |
+| `esp32_wifi_manager.ino | The Arduino sketch used in this activity |
 | `images/` | Screenshots used in the README and report |
